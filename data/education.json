@@ -1,0 +1,19 @@
+{
+	"schools":[
+		{
+			"name": "Polytechnique",
+			"location": "Montreal",
+			"degree":"Software engineering",
+			"majors":"Multimedia concentration",
+			"dates":20140501,
+			"url":"http://www.polymtl.ca/en"
+		}],
+	"onlineCourses":[
+		{
+			"title":"Cryptography I",
+			"school":"Stanford University",
+			"date":20131001,
+			"url":"https://www.coursera.org/learn/crypto"
+		}],
+	"display":"function(){alert('Education display function called.');}"
+}

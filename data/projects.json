@@ -1,0 +1,11 @@
+{
+	"projects":[
+		{
+			"title":"Stratocats",
+			"dates":"",
+			"description":"This project is about creating a web application for friends to listen & share music together.",
+			"images":[]
+		}
+	],
+	"display":"function(){alert('Projects display triggered.');}"
+}

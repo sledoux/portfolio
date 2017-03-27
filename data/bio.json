@@ -1,0 +1,15 @@
+{
+	"name":"Samuel Ledoux",
+	"role":"SDET",
+	"contacts": {
+		"mobile": "1-438-870-8616",
+		"email": "samuel.ledoux5@gmail.com",
+		"github": "https://github.com/sledoux",
+		"twitter": "None",
+		"location": "Laval, Qc"
+	},
+	"welcomeMessage": "Welcome to my resume",
+	"skills":["C#","JavaScript","HTML","CSS"],
+	"biopic":"TOADD",
+	"display":"function(){alert('Bio display function triggered');}"
+}

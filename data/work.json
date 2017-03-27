@@ -1,0 +1,11 @@
+{
+	"jobs":[
+		{
+			"employer":"Genetec",
+			"title":"SDET",
+			"location":"Montreal",
+			"dates":"20140505-now",
+			"description":"My job was to develop and maintain a full suite of automated tests for multiple services."
+		}],
+	"display":"function(){alert('Work display function triggered.');}"
+}
