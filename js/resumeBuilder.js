@@ -2,9 +2,9 @@ var workExperienceJson = {
 	"jobs":[
 		{
 			"employer":"Genetec",
-			"title":"SDET",
+			"title":"Software developper engineer in test",
 			"location":"Montreal",
-			"dates":"20140505-now",
+			"dates":"Mai 2014 - Now",
 			"description":"My job was to develop and maintain a full suite of automated tests for multiple services."
 		}],
 	//"display":"function(){alert('Work display function triggered.');}"
@@ -21,7 +21,7 @@ var bioJson = {
 	},
 	"welcomeMessage": "Welcome to my resume",
 	"skills":["C#","JavaScript","HTML","CSS"],
-	"biopic":"TOADD",
+	"biopic":"images/profile.jpg",
 	//"display":"function(){alert('Bio display function triggered');}"
 };
 
@@ -69,8 +69,32 @@ for (var key in bioJson.contacts)
 	}
 }
 
-$("#header").append(HTMLbioPic.replace("%data%", "images/profile.jpg"));
-$("#header").append(HTMLbioPic.replace("%data%", "images/profile.jpg"));
+$("#header").append(HTMLbioPic.replace("%data%", bioJson.biopic));
 
-//$("#workExperience").append(workExperienceJson);
+$("#header").append(HTMLwelcomeMsg.replace("%data%", bioJson.welcomeMessage));
+$("#header").append(HTMLskillsStart);
+
+for (var key in bioJson.skills)
+{
+	if(bioJson.skills.hasOwnProperty(key))
+	{
+		$("#skills").append(HTMLskills.replace("%data%", bioJson.skills[key]));
+	}
+}
+
+$("#workExperience").append(HTMLworkStart);
+
+for (var key in workExperienceJson.jobs)
+{
+	if(workExperienceJson.jobs.hasOwnProperty(key))
+	{
+		var job = workExperienceJson.jobs[key];
+		$(".work-entry:last").append(HTMLworkEmployer.replace("%data%", job.employer)+HTMLworkTitle.replace("%data%", job.title));
+		$(".work-entry:last").append(HTMLworkDates.replace("%data%", job.dates)+HTMLworkLocation.replace("%data%", job.location));
+		$(".work-entry:last").append(HTMLworkDescription.replace("%data%", job.description));
+	}
+}
+
+
+
 
